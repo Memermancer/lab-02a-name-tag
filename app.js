@@ -1,11 +1,32 @@
-const myButton = document.getElementById('my-special-button');
+const pinkButton = document.getElementById('pink');
 
-myButton.addEventListener('click', () => {
+pinkButton.addEventListener('click', () => {
     // post-click logic goes here!
+    const div = document.getElementById('hell')
+    div.style.backgroundColor = "pink";
 })
 
-const myInput = document.getElementById('my-special-input');
+const greenButton = document.getElementById('green');
 
-myInput.addEventListener('input', () => {
+greenButton.addEventListener('click', () => {
     // post-click logic goes here!
+    const div = document.getElementById('hell')
+    div.style.backgroundColor = "lightgreen";
 })
+
+const blueButton = document.getElementById('blue');
+
+blueButton.addEventListener('click', () => {
+    // post-click logic goes here!
+    const div = document.getElementById('hell')
+    div.style.backgroundColor = "lightblue";
+})
+
+
+const nameButton = document.getElementById('changeName');
+nameButton.addEventListener('click', () => {
+    console.log('doot');
+    const userInput = document.getElementById('text1').value;
+    const userName = document.getElementById('name1');
+    userName.textContent = userInput;
+});
